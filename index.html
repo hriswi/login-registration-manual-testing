@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login | Login & Registration Testing Project</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h2>Login</h2>
+
+      <form id="loginForm" novalidate>
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter your email" />
+        <span class="error" id="loginEmailError"></span>
+
+        <label for="loginPassword">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="loginPassword" placeholder="Enter your password" />
+          <span class="toggle-icon" onclick="togglePassword('loginPassword', this)">👁</span>
+        </div>
+        <span class="error" id="loginPasswordError"></span>
+
+        <button type="submit">Login</button>
+
+        <a href="#" class="link-small" id="forgotPasswordLink">Forgot Password?</a>
+      </form>
+
+      <p class="switch-link">Don't have an account? <a href="register.html">Register here</a></p>
+      <p class="msg" id="loginMsg"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

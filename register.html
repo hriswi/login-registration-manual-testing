@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Register | Login & Registration Testing Project</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h2>Create Account</h2>
+
+      <form id="registerForm" novalidate>
+        <label for="registerName">Name</label>
+        <input type="text" id="registerName" placeholder="Enter your full name" />
+        <span class="error" id="nameError"></span>
+
+        <label for="registerEmail">Email</label>
+        <input type="email" id="registerEmail" placeholder="Enter your email" />
+        <span class="error" id="registerEmailError"></span>
+
+        <label for="registerPassword">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="registerPassword" placeholder="Create a password" />
+          <span class="toggle-icon" onclick="togglePassword('registerPassword', this)">👁</span>
+        </div>
+        <span class="error" id="registerPasswordError"></span>
+
+        <label for="registerConfirmPassword">Confirm Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="registerConfirmPassword" placeholder="Re-enter your password" />
+          <span class="toggle-icon" onclick="togglePassword('registerPassword', this)">👁</span>
+        </div>
+        <span class="error" id="confirmPasswordError"></span>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p class="switch-link">Already have an account? <a href="index.html">Login here</a></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
