@@ -77,7 +77,3 @@ Selenium were used). The complete QA documentation is available inside the
   pattern) can slip into real applications — and how a QA tester's job is to catch
   these before the user does.
 
-## 8. Disclaimer
-This is a **personal/academic project** built to practice and demonstrate manual
-QA testing skills. It is not a production application and does not claim any
-professional/industry experience.
